@@ -15,8 +15,9 @@ public class StudentService {
 		map.put(2, new Student(2, "Shyam"));
 		map.put(3, new Student(3, "Rahim"));
 	}
+
 	public String getStudentName(int id) {
-		System.out.println("Fetching student for the id:"+ id);
+		System.out.println("Fetching student for the id:" + id);
 		Student std = map.get(id);
 		return std.getStdName();
 	}
